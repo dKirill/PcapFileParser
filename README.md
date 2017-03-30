@@ -4,7 +4,8 @@
 
 ## Установка
 
-Программе нужны [libpcap](http://www.tcpdump.org) и [PcapPlusPlus](https://github.com/seladb/PcapPlusPlus)
+Программе нужны [libpcap](http://www.tcpdump.org) и [PcapPlusPlus](https://github.com/seladb/PcapPlusPlus).
+
 Перед сборкой, надо выставить переменные окружения PCAPP_INCLUDE - путь к инклудам PcapPlusPlus и PCAPP_LIB - путь к собранным библиотекам PcapPlusPlus (libPacket++, libPcap++, libCommon++).
 
 ## Использование
@@ -12,9 +13,11 @@
 ### Обязательные параметры:
 Путь к PCAP-файлу
 ### Опциональные параметры:
-Фильтр по IP-адресу назначения
-Фильтр по порту назначения
-Примеры запуска приложения:
+Фильтр по IP-адресу назначения -a # / --address #
+
+Фильтр по порту назначения -p # / --port #
+
+### Примеры запуска приложения:
 
 Напечатать все UDP-пакеты из файла
 ```
